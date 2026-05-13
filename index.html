@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.angeloma Integrated - Excellence in Manufacturing</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Outfit:wght@300;400;500&display=swap">
+    <style>
+        :root {
+            --color-primary: #0f0700;
+            --color-accent: #ff7628;
+            --color-bg: #FAF0E8;
+            --color-text: #180A00;
+            --color-surface: #150a00;
+            --color-secondary-accent: #78a0ae;
+            --font-display: 'Exo 2', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --border-radius: 0px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(15, 7, 0, 0.02) 10px,
+                rgba(15, 7, 0, 0.02) 11px
+            );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(250, 240, 232, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 4px 0 0 var(--color-accent);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -4px 0 0 0 var(--color-accent);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        section {
+            position: relative;
+            z-index: 2;
+        }
+
+        #hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/3089681/pexels-photo-3089681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            color: #ffffff;
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            color: var(--color-accent);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--color-accent);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 4px 4px 0 0 var(--color-primary);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 0 var(--color-primary);
+        }
+
+        #about {
+            padding: 80px 2rem;
+            background: var(--color-bg);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+            margin-top: -5vh;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 0 var(--color-accent);
+        }
+
+        .about-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        #services {
+            padding: 80px 2rem;
+            background: var(--color-surface);
+            color: var(--color-bg);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+            margin-top: -5vh;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services-container h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(250, 240, 232, 0.05);
+            padding: 2rem;
+            border: 2px solid var(--color-accent);
+            box-shadow: 4px 4px 0 0 var(--color-accent);
+        }
+
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-bg);
+        }
+
+        #why-choose-us {
+            padding: 80px 2rem;
+            background: var(--color-bg);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+            margin-top: -5vh;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .why-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .why-container h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .why-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-left: 6px solid var(--color-accent);
+            box-shadow: 4px 4px 0 0 var(--color-secondary-accent);
+        }
+
+        .why-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+
+        .why-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        #contact {
+            padding: 80px 2rem;
+            background: var(--color-surface);
+            color: var(--color-bg);
+            text-align: center;
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            margin-top: -5vh;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-container h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-container p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-item a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #ffffff;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #25D366;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 4px 4px 0 0 var(--color-primary);
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 0 var(--color-primary);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #ffffff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 4px 4px 0 0 var(--color-primary);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: var(--color-primary);
+            color: var(--color-bg);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-content h2,
+            .services-container h2,
+            .why-container h2,
+            .contact-container h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            #hero,
+            #about,
+            #services,
+            #why-choose-us,
+            #contact {
+                padding: 48px 1.5rem;
+            }
+
+            .about-content h2,
+            .services-container h2,
+            .why-container h2,
+            .contact-container h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">G.angeloma Integrated</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>G.angeloma Integrated</h1>
+            <div class="hero-tagline">Excellence in Manufacturing, Quality in Every Product</div>
+            <p>G.angeloma Integrated: Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that drive business success across diverse industries. From concept to completion, we manufacture excellence.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="https://images.pexels.com/photos/7750116/pexels-photo-7750116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="G.angeloma Integrated Manufacturing Facility" class="about-image">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>G.angeloma Integrated is a leading manufacturing company based in Kpaduma 2, Almc, Nigeria. We specialize in delivering high-quality manufactured products that meet international standards while serving the Nigerian market with dedication and integrity. Our state-of-the-art facilities combine modern technology with skilled craftsmanship to produce reliable, durable products for businesses and consumers alike. With years of experience in the manufacturing sector, we understand the unique needs of Nigerian industries and are committed to supporting local economic growth through quality production and sustainable practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Manufacturing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing Solutions</h3>
+                    <p>We provide tailored manufacturing services designed to meet your specific product requirements, from prototype development to full-scale production runs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Control & Assurance</h3>
+                    <p>Every product undergoes rigorous quality testing using international standards to ensure durability, safety, and reliability before delivery.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Industrial Production</h3>
+                    <p>Our advanced production capabilities handle high-volume manufacturing with consistent quality, meeting tight deadlines without compromising standards.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Product Development Support</h3>
+                    <p>We work closely with clients from design concept through to final production, offering technical expertise and engineering support throughout the manufacturing process.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Supply Chain Management</h3>
+                    <p>Comprehensive logistics coordination ensuring timely delivery of raw materials and finished products across Nigeria.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Maintenance & Technical Support</h3>
+                    <p>Ongoing support services to keep your manufactured products performing optimally throughout their lifecycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="why-container">
+            <h2>Why Choose G.angeloma Integrated</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Local Expertise, Global Standards</h3>
+                    <p>We combine deep understanding of the Nigerian market with manufacturing practices that meet international quality benchmarks.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>Cost-effective manufacturing solutions that deliver excellent value without sacrificing quality, helping Nigerian businesses stay competitive.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Reliable Delivery</h3>
+                    <p>We understand the importance of timely production schedules and maintain consistent on-time delivery records across all our projects.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Skilled Workforce</h3>
+                    <p>Our team of experienced engineers, technicians, and quality control specialists bring decades of combined manufacturing expertise.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Modern Infrastructure</h3>
+                    <p>Investment in cutting-edge equipment and technology ensures we can handle complex manufacturing requirements with precision.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Sustainable Practices</h3>
+                    <p>We're committed to environmentally responsible manufacturing processes that minimize waste and support Nigeria's sustainable development goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Ready to discuss your manufacturing needs? G.angeloma Integrated is here to turn your production requirements into reality. Whether you need a quote, technical consultation, or want to visit our facility in Kpaduma 2, we're ready to serve you.</p>
+            <p>Call us today or send a WhatsApp message for quick response. Our team is available to answer your questions and provide expert guidance on your manufacturing projects. We look forward to partnering with you for manufacturing excellence.</p>
+            <p>Visit our facility at Kpaduma 2, Almc, Nigeria, or reach out through any of our contact channels below. Let's build something great together.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Phone:</strong> <a href="tel:+2348064400359">+234 806 440 0359</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:info@gangeloma.com.ng">info@gangeloma.com.ng</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong> Kpaduma 2, Almc, Nigeria
+                </div>
+            </div>
+            <a href="https://wa.me/2348064400359" class="whatsapp-button" target="_blank">Message Us on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 G.angeloma Integrated. All rights reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/2348064400359" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
