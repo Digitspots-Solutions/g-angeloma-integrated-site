@@ -1,0 +1,49 @@
+{
+  "businessName": "G.angeloma Integrated",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Excellence in Manufacturing, Quality in Every Product",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "G.angeloma Integrated: Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that drive business success across diverse industries. From concept to completion, we manufacture excellence.",
+      "imagePrompt": "Modern Nigerian manufacturing facility exterior with sleek industrial architecture, workers in safety gear operating advanced machinery, bright daylight, professional photography, high-tech production environment, blue and silver color scheme, sharp focus, ultra-detailed, 4K quality",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "G.angeloma Integrated is a leading manufacturing company based in Kpaduma 2, Almc, Nigeria. We specialize in delivering high-quality manufactured products that meet international standards while serving the Nigerian market with dedication and integrity. Our state-of-the-art facilities combine modern technology with skilled craftsmanship to produce reliable, durable products for businesses and consumers alike. With years of experience in the manufacturing sector, we understand the unique needs of Nigerian industries and are committed to supporting local economic growth through quality production and sustainable practices.",
+      "imagePrompt": "Wide interior shot of a clean, organized Nigerian manufacturing floor, rows of precision equipment, quality control stations, natural lighting through large windows, workers collaborating, professional industrial setting, warm lighting, documentary style photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Manufacturing Services",
+      "copy": "**Custom Manufacturing Solutions** - We provide tailored manufacturing services designed to meet your specific product requirements, from prototype development to full-scale production runs.\n\n**Quality Control & Assurance** - Every product undergoes rigorous quality testing using international standards to ensure durability, safety, and reliability before delivery.\n\n**Industrial Production** - Our advanced production capabilities handle high-volume manufacturing with consistent quality, meeting tight deadlines without compromising standards.\n\n**Product Development Support** - We work closely with clients from design concept through to final production, offering technical expertise and engineering support throughout the manufacturing process.\n\n**Supply Chain Management** - Comprehensive logistics coordination ensuring timely delivery of raw materials and finished products across Nigeria.\n\n**Maintenance & Technical Support** - Ongoing support services to keep your manufactured products performing optimally throughout their lifecycle.",
+      "imagePrompt": "Grid layout of Nigerian manufacturing processes: close-up of precision machining, quality inspector checking products with calipers, warehouse with organized inventory, welding sparks, CAD design on computer screen, modern industrial aesthetics, professional photography, vibrant yet industrial color palette",
+      "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose G.angeloma Integrated",
+      "copy": "**Local Expertise, Global Standards** - We combine deep understanding of the Nigerian market with manufacturing practices that meet international quality benchmarks.\n\n**Competitive Pricing** - Cost-effective manufacturing solutions that deliver excellent value without sacrificing quality, helping Nigerian businesses stay competitive.\n\n**Reliable Delivery** - We understand the importance of timely production schedules and maintain consistent on-time delivery records across all our projects.\n\n**Skilled Workforce** - Our team of experienced engineers, technicians, and quality control specialists bring decades of combined manufacturing expertise.\n\n**Modern Infrastructure** - Investment in cutting-edge equipment and technology ensures we can handle complex manufacturing requirements with precision.\n\n**Sustainable Practices** - We're committed to environmentally responsible manufacturing processes that minimize waste and support Nigeria's sustainable development goals.",
+      "imagePrompt": "Professional montage showing Nigerian manufacturing excellence: quality certificate ISO standards, happy client shaking hands with manufacturer, advanced machinery in operation, team of diverse Nigerian engineers and technicians, certificates and awards on wall, bright modern office environment",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to discuss your manufacturing needs? G.angeloma Integrated is here to turn your production requirements into reality. Whether you need a quote, technical consultation, or want to visit our facility in Kpaduma 2, we're ready to serve you.\n\nCall us today or send a WhatsApp message for quick response. Our team is available to answer your questions and provide expert guidance on your manufacturing projects. We look forward to partnering with you for manufacturing excellence.\n\nVisit our facility at Kpaduma 2, Almc, Nigeria, or reach out through any of our contact channels below. Let's build something great together.",
+      "imagePrompt": "Professional Nigerian business contact scene: modern office reception area with comfortable seating, receptionist at desk, large windows showing manufacturing facility in background, plants, corporate branding, welcoming atmosphere, natural lighting, Lagos/Abuja business district aesthetic",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 806 440 0359",
+    "email": "info@gangeloma.com.ng",
+    "address": "Kpaduma 2, Almc, Nigeria",
+    "whatsapp": "https://wa.me/2348064400359"
+  }
+}
