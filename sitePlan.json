@@ -1,49 +1,49 @@
 {
-  "businessName": "G.angeloma Integrated",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Excellence in Manufacturing, Quality in Every Product",
+  "businessName": "New Covenant Wealth Management Co",
+  "industry": "Financial Services & Investment",
+  "tone": "formal, authoritative, trustworthy",
+  "tagline": "Building Generational Wealth Through Strategic Financial Management",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "G.angeloma Integrated: Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that drive business success across diverse industries. From concept to completion, we manufacture excellence.",
-      "imagePrompt": "Modern Nigerian manufacturing facility exterior with sleek industrial architecture, workers in safety gear operating advanced machinery, bright daylight, professional photography, high-tech production environment, blue and silver color scheme, sharp focus, ultra-detailed, 4K quality",
+      "name": "Hero Section",
+      "copy": "Welcome to New Covenant Wealth Management Co\n\nYour Trusted Partner in Private Banking and Treasury Management\n\nAt New Covenant, we provide sophisticated wealth management solutions tailored to high-net-worth individuals and corporate clients across Nigeria. With expert treasury management and personalized financial strategies, we help you preserve and grow your wealth for generations to come.\n\nSchedule a Confidential Consultation",
+      "imagePrompt": "Photorealistic panoramic view of modern Lagos skyline at golden hour, featuring contemporary glass banking towers and financial district, professional executive in tailored navy suit reviewing documents in foreground, sophisticated Nigerian business atmosphere, warm natural lighting, ultra-sharp detail, premium financial services aesthetic",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "G.angeloma Integrated is a leading manufacturing company based in Kpaduma 2, Almc, Nigeria. We specialize in delivering high-quality manufactured products that meet international standards while serving the Nigerian market with dedication and integrity. Our state-of-the-art facilities combine modern technology with skilled craftsmanship to produce reliable, durable products for businesses and consumers alike. With years of experience in the manufacturing sector, we understand the unique needs of Nigerian industries and are committed to supporting local economic growth through quality production and sustainable practices.",
-      "imagePrompt": "Wide interior shot of a clean, organized Nigerian manufacturing floor, rows of precision equipment, quality control stations, natural lighting through large windows, workers collaborating, professional industrial setting, warm lighting, documentary style photography",
+      "copy": "Leading Private Banking Excellence in Nigeria\n\nNew Covenant Wealth Management Co (also operating as New Covenant Private Banking Limited) is a premier financial services institution headquartered in Abuja, Nigeria. Under the expert leadership of our Treasury Manager, we deliver comprehensive wealth management, private banking, and treasury solutions to discerning clients.\n\nOur mission is to provide secure, strategic, and personalized financial services that protect and enhance our clients' wealth. We combine deep market knowledge with global best practices to deliver superior outcomes in Nigeria's dynamic financial landscape.\n\nWith a foundation built on integrity, confidentiality, and professional excellence, New Covenant has become the trusted choice for clients seeking sophisticated financial management in the Federal Capital Territory and beyond.",
+      "imagePrompt": "Professional interior of modern Nigerian private banking office, executive boardroom with polished mahogany table, contemporary African art on walls, floor-to-ceiling windows overlooking Abuja cityscape, elegant Nigerian business professionals in consultation, natural daylight, refined corporate atmosphere, photorealistic detail",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Manufacturing Services",
-      "copy": "**Custom Manufacturing Solutions** - We provide tailored manufacturing services designed to meet your specific product requirements, from prototype development to full-scale production runs.\n\n**Quality Control & Assurance** - Every product undergoes rigorous quality testing using international standards to ensure durability, safety, and reliability before delivery.\n\n**Industrial Production** - Our advanced production capabilities handle high-volume manufacturing with consistent quality, meeting tight deadlines without compromising standards.\n\n**Product Development Support** - We work closely with clients from design concept through to final production, offering technical expertise and engineering support throughout the manufacturing process.\n\n**Supply Chain Management** - Comprehensive logistics coordination ensuring timely delivery of raw materials and finished products across Nigeria.\n\n**Maintenance & Technical Support** - Ongoing support services to keep your manufactured products performing optimally throughout their lifecycle.",
-      "imagePrompt": "Grid layout of Nigerian manufacturing processes: close-up of precision machining, quality inspector checking products with calipers, warehouse with organized inventory, welding sparks, CAD design on computer screen, modern industrial aesthetics, professional photography, vibrant yet industrial color palette",
+      "name": "Our Services",
+      "copy": "Comprehensive Wealth Management Solutions\n\nPrivate Banking Services\nExclusive banking solutions for high-net-worth individuals, including personalized account management, priority banking services, and dedicated relationship managers who understand your unique financial goals.\n\nTreasury Management\nExpert treasury operations including liquidity management, foreign exchange services, risk management, and cash flow optimization for corporate and individual clients navigating Nigeria's financial markets.\n\nWealth Management & Advisory\nStrategic financial planning, investment portfolio management, asset allocation, and comprehensive wealth preservation strategies designed to build and protect generational wealth.\n\nInvestment Services\nAccess to premium investment opportunities including fixed income securities, equities, alternative investments, and structured products tailored to Nigerian and international markets.\n\nEstate & Succession Planning\nConfidential advisory services to ensure smooth wealth transfer, legacy planning, and family office solutions that preserve your financial heritage for future generations.\n\nCorporate Financial Services\nSpecialized treasury solutions for businesses including working capital management, trade finance, corporate advisory, and strategic financial restructuring.",
+      "imagePrompt": "Elegant grid layout showcasing modern Nigerian financial services, images of professional handshakes, digital banking interfaces on tablets, Nigerian currency notes and financial documents, executive desk with treasury reports, sophisticated African business environment, clean professional photography, bright natural lighting",
       "layout": "grid"
     },
     {
       "id": "why-choose-us",
-      "name": "Why Choose G.angeloma Integrated",
-      "copy": "**Local Expertise, Global Standards** - We combine deep understanding of the Nigerian market with manufacturing practices that meet international quality benchmarks.\n\n**Competitive Pricing** - Cost-effective manufacturing solutions that deliver excellent value without sacrificing quality, helping Nigerian businesses stay competitive.\n\n**Reliable Delivery** - We understand the importance of timely production schedules and maintain consistent on-time delivery records across all our projects.\n\n**Skilled Workforce** - Our team of experienced engineers, technicians, and quality control specialists bring decades of combined manufacturing expertise.\n\n**Modern Infrastructure** - Investment in cutting-edge equipment and technology ensures we can handle complex manufacturing requirements with precision.\n\n**Sustainable Practices** - We're committed to environmentally responsible manufacturing processes that minimize waste and support Nigeria's sustainable development goals.",
-      "imagePrompt": "Professional montage showing Nigerian manufacturing excellence: quality certificate ISO standards, happy client shaking hands with manufacturer, advanced machinery in operation, team of diverse Nigerian engineers and technicians, certificates and awards on wall, bright modern office environment",
+      "name": "Why Choose New Covenant",
+      "copy": "The New Covenant Advantage\n\nExpert Treasury Leadership\nOur operations are guided by seasoned treasury management expertise, ensuring your assets are managed with institutional-grade precision and strategic foresight.\n\nConfidential & Personalized Service\nWe provide discreet, tailored financial solutions that respect your privacy while delivering outcomes aligned with your specific wealth objectives.\n\nNigerian Market Expertise\nDeep understanding of Nigeria's financial landscape, regulatory environment, and economic dynamics enables us to navigate opportunities and mitigate risks effectively.\n\nGlobal Standards, Local Insight\nWe combine international best practices in private banking with intimate knowledge of local market conditions to deliver superior results.\n\nLong-term Partnership\nOur focus extends beyond transactions to building enduring relationships that support your financial success across generations.\n\nComprehensive Solutions\nFrom personal wealth management to complex corporate treasury operations, we offer integrated services under one trusted roof.",
+      "imagePrompt": "Professional Nigerian treasury manager in executive office reviewing financial analytics on large monitor, modern Abuja office interior with certificates and awards on wall, confident African business professional, sophisticated banking environment, natural window lighting, photorealistic corporate photography",
       "layout": "cards"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to discuss your manufacturing needs? G.angeloma Integrated is here to turn your production requirements into reality. Whether you need a quote, technical consultation, or want to visit our facility in Kpaduma 2, we're ready to serve you.\n\nCall us today or send a WhatsApp message for quick response. Our team is available to answer your questions and provide expert guidance on your manufacturing projects. We look forward to partnering with you for manufacturing excellence.\n\nVisit our facility at Kpaduma 2, Almc, Nigeria, or reach out through any of our contact channels below. Let's build something great together.",
-      "imagePrompt": "Professional Nigerian business contact scene: modern office reception area with comfortable seating, receptionist at desk, large windows showing manufacturing facility in background, plants, corporate branding, welcoming atmosphere, natural lighting, Lagos/Abuja business district aesthetic",
+      "copy": "Begin Your Wealth Management Journey\n\nSchedule a confidential consultation with our team to discuss your financial objectives and discover how New Covenant Wealth Management Co can serve your needs.\n\nOffice Location\nKpaduma 2, ALMC\nAbuja, Nigeria\n\nPhone\n+234 806 440 0359\n\nEmail\ninfo@newcovenantng.com\n\nBusiness Hours\nMonday - Friday: 9:00 AM - 5:00 PM\nSaturday: By Appointment Only\n\nAll consultations are strictly confidential. Contact us today to experience the New Covenant difference in private banking and wealth management.\n\nFor immediate inquiries, reach us via WhatsApp for prompt, secure communication.",
+      "imagePrompt": "Modern Nigerian bank branch reception area in Abuja, professional receptionist at elegant marble counter, comfortable waiting area with leather seating, large windows showing Kpaduma area, welcoming corporate atmosphere, pristine professional environment, natural daylight, photorealistic architectural photography",
       "layout": "centered"
     }
   ],
   "contact": {
     "phone": "+234 806 440 0359",
-    "email": "info@gangeloma.com.ng",
-    "address": "Kpaduma 2, Almc, Nigeria",
+    "email": "info@newcovenantng.com",
+    "address": "Kpaduma 2, ALMC, Abuja, Nigeria",
     "whatsapp": "https://wa.me/2348064400359"
   }
 }
